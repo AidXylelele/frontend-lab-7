@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.colouredElements {
+  background-color: rgb(237, 227, 215);
+  border: 1px solid white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  border: 2px solid #4caf50;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.goods-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.goods-card * {
+  margin: 0;
+  padding: 0;
+}
+
+.goods-card img {
+  height: 120px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.goods-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(0, 81, 255);
+  position: relative;
+}
+
+.goods-card h3::before {
+  content: "";
+  background: rgb(0, 81, 255);
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: -20px;
 }
